@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  
+  link(href="css/main.min.css", rel="stylesheet")
+  
+  script(src="https://use.typekit.net/crq2gzs.js")
+  script try{Typekit.load({async: true});}catch(e){}
+  script(src="https://use.fontawesome.com/82563c2d95.js")
+  
+  title Jean-Simon Robert Ouimet
+
+body
+  nav.main-nav
+    a(href="#")
+      i(class="fa fa-bars menu-icon" aria-hidden="true" onclick="openNav()")
+    
+  #nav.overlay
+    .overlay-nav
+      a(href="#")
+        i(class="fa fa-times menu-icon primary-color" aria-hidden="true" onclick="closeNav()")
+    .overlay-container
+      a(href="project-mprs.html").link.no-underline.primary-color Master Piano Recital Series
+      a(href="project-la-parapharmacie").link.no-underline.primary-color La Parapharmacie
+      a(href="project-mimib").link.no-underline.primary-color mimiB
+      a(href="project-assent-compliance").link.no-underline.primary-color Assent Compliance
+      a(href="project-concerts-by-the-canal").link.no-underline.primary-color Concerts by the Canal
+    //- .language-selectors  
+    //-   a(href="http://www.french.html").no-underline FR
+  
+  main
+    .main-container
+      header
+        h1 
+          | Jean-Simon
+          br
+          | Robert Ouimet
+          sup
+            i(class="fa fa-question-circle" aria-hidden="true")
+        p Designer &amp; Developer
+
+      footer
+          a(href="mailto:hello@jsrobertouimet.com").link hello@jsrobertouimet.com
+          p
+            a(href="https://www.behance.net/JSRobertOuimet" target="_blank").social-link
+              i(class="fa fa-behance" aria-hidden="true")
+            a(href="https://github.com/JSRobertOuimet" target="_blank").social-link
+              i(class="fa fa-github" aria-hidden="true")
+            a(href="https://ca.linkedin.com/in/jsrobertouimet" target="_blank").social-link
+              i(class="fa fa-linkedin" aria-hidden="true")
+            a(href="https://docs.google.com/document/d/1e6kbkIZGlBMzmanThrdp1rSKmLjti8vY3bI4pTvyAGA/edit?usp=sharing" target="_blank").social-link
+              i(class="fa fa-file-text" aria-hidden="true")
+    
+  nav.secondary-nav
+    a(href="#")
+      i(class="fa fa-stop-circle audio-controls" aria-hidden="true")
+
+  script(src="js/main.min.js")

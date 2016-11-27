@@ -1,0 +1,39 @@
+.overlay
+	display: flex
+	flex-direction: column
+	position: fixed
+	overflow-x: hidden
+	left: 0
+	top: 0
+	z-index: 1
+	height: 100vh
+	background-color: white
+	background: 
+		image: url("../img/concentric-form-light-blue.svg")
+		position: -40px
+		size: 150%
+		repeat: no-repeat
+
+.overlay-nav
+	position: absolute
+	height: 50px
+
+.overlay-container
+	display: flex
+	flex-direction: column
+	justify-content: center
+	height: 100vh
+	text-align: center
+
+.overlay-container a
+	text-decoration: none
+	display: block // Display block instead of inline
+
+// When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap
+@media (max-height: 450px)
+	.overlay a
+		font-size: 20px
+	.overlay .closebtn
+		font-size: 40px
+		top: 15px
+		right: 35px
